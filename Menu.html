@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>လက်ဖက်ရည်ဆိုင် - Digital Menu</title>
+    <style>
+        /* အခြေခံ Style များ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pyidaungsu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ဆိုင်ခေါင်းစဉ် */
+        header {
+            background-color: #8B4513; /* ကော်ဖီရောင်/လက်ဖက်ရည်ရောင် */
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Menu ပတ်ဝန်းကျင် Container */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* အမျိုးအစား ခေါင်းစဉ် (Category) */
+        .category-title {
+            background-color: #D2B48C;
+            color: #4A2711;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* Menu Box တစ်ခုချင်းစီ */
+        .menu-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .item-info .item-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4A2711;
+        }
+
+        .item-info .item-details {
+            font-size: 12px;
+            color: #777;
+            margin-top: 2px;
+        }
+
+        .item-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #8B4513;
+            background-color: #FFF8DC;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>အောင်ချမ်းသာ လက်ဖက်ရည်ဆိုင်မှ</h1>
+        <p>နွေးထွေးပျူငှာစွာ ကြိုဆိုပါသည်</p>
+    </header>
+
+    <div class="container">
+
+        <div class="category-title">☕ အဖျော်ယမကာများ</div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">လက်ဖက်ရည် (ပုံမှန်/ပေါ့ဆိမ့်/ချိုဆိမ့်)</div>
+                <div class="item-details">ရှယ်</div>
+            </div>
+            <div class="item-price">၁,၅၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">ကော်ဖီမစ် (Coffee Mix)</div>
+                <div class="item-details">နှပ်ကော်ဖီမွှေးမွှေးလေး</div>
+            </div>
+            <div class="item-price">၁,၅၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">နွားနို့စစ်စစ် (အပူ/အအေး)</div>
+                <div class="item-details">လတ်ဆတ်သော နွားနို့</div>
+            </div>
+            <div class="item-price">၁,၅၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">ရေနွေးကြမ်း (အခမဲ့)</div>
+                <div class="item-details">အမွှေးအကြိုင် ရေနွေးကြမ်း</div>
+            </div>
+            <div class="item-price">Free</div>
+        </div>
+
+
+        <div class="category-title">🥟 မုန့်မျိုးစုံ</div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">အီကြာကွေး</div>
+                <div class="item-details">ပူပူနွေးနွေး အကြွပ်ကြော်</div>
+            </div>
+            <div class="item-price">၆၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">ပေါက်စီ</div>
+                <div class="item-details">အသားဌာပနာ အဆာသွတ်</div>
+            </div>
+            <div class="item-price">၁၅၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">ပလာတာ (သကြား/ပဲ)</div>
+                <div class="item-details">ထပ်တရာ ပလာတာမွှေးမွှေး</div>
+            </div>
+            <div class="item-price">၁,၀၀၀ ကျပ်</div>
+        </div>
+
+
+        <div class="category-title">🍜 နံနက်စာ အစားအစာများ</div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">မုန့်ဟင်းခါး</div>
+                <div class="item-details">အကြော်/ဥ ပါဝင်ပြီးသား</div>
+            </div>
+            <div class="item-price">၁,၈၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">အုန်းနို့ခေါက်ဆွဲ</div>
+                <div class="item-details">ကြက်သားအုန်းနို့ဟင်းရည်濃濃</div>
+            </div>
+            <div class="item-price">၂,၀၀၀ ကျပ်</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">ထမင်းကြော် (ကြက်ဥပါ)</div>
+                <div class="item-details">ပဲပြုတ် ထမင်းကြော်မွှေးမွှေး</div>
+            </div>
+            <div class="item-price">၂,၂၀၀ ကျပ်</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 အောင်ချမ်းသာလက်ဖက်ရည်ဆိုင်မှ ၊
+လူကြီးမင်းတို့၏ အော်ဒါများကို ကောင်တာတွင် မှာယူပေးပါရန်။</p>
+    </footer>
+
+</body>
+</html>
